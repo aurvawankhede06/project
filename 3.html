@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: #666;
+            color: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: left;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .menu-item h3 {
+            background-color: #f8bcbc;
+            color: black;
+            padding: 5px 10px;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+        }
+
+        .menu-item.beef h3 {
+            background-color: #d9534f;
+            color: white;
+        }
+
+        .menu-item.sushi h3 {
+            background-color: #f3e28d;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Our Menu</h2>
+    <div class="menu-container">
+        <div class="menu-item chicken">
+            <h3>Chicken</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </div>
+        <div class="menu-item beef">
+            <h3>Beef</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </div>
+        <div class="menu-item sushi">
+            <h3>Sushi</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </div>
+    </div>
+</body>
+</html>
